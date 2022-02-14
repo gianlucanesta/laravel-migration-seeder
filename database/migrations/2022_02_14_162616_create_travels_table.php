@@ -21,8 +21,7 @@ class CreateTravelsTable extends Migration
             $table->tinyInteger('hotel_stars')->unsigned();
             $table->decimal('price', 6, 2);
             $table->text('description')->nullable();
-            $table->string('first_name', 20);
-            $table->string('last_name', 20);
+            $table->string('name', 20);
         });
     }
 
